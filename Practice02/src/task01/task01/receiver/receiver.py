@@ -14,7 +14,7 @@ class Receiver(Node):
         self.subscription
 
     def listener_callback(self, msg):
-        self.get_logger().info(f'Received message: {msg.data}')
+        self.get_logger().info(msg.data)
 
 def main(args=None):
     rclpy.init(args=args)
